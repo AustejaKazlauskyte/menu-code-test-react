@@ -9,8 +9,8 @@ type ButtonProps = {
 
 const cx = classNames.bind(styles);
 
-const Button: React.FC<ButtonProps>  = ({title, onClick}) => {
-    return (<button className={cx('body')} title={title} onClick={onClick}>Mygelis</button>)
+const Button: React.FC<ButtonProps> = ({title, onClick}) => {
+    return (<button className={cx('button')} title={title} onClick={onClick}>Order Now</button>)
 }
 
 export default Button;
