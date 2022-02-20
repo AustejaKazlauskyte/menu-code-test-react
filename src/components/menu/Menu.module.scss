@@ -9,7 +9,36 @@
     font-size: 1.5rem;
   }
 
-  &__wrapper {
-    width: 50%;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
   }
+
+  &__price {
+    color: black;
+    font-weight: bold;
+  }
+
+  &__counter-wrapper {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__selection-wrapper {
+    width: 10%;
+  }
+
+  &__order {
+    margin-top: 50px;
+  }
+
+  &__actions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
 }

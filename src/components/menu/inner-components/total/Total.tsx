@@ -1,21 +1,15 @@
 import React from 'react'
 import styles from './Total.module.scss'
-import classNames from 'classnames/bind'
 
 type TotalProps = {
-    title: string
     price: number
 }
 
-const cx = classNames.bind(styles)
-
-const Total: React.FC<TotalProps> = ({ title, price }) => {
-    return (
-        <div className={cx('total')}>
-            <div className={cx('total__title')}>{title}</div>
-            <div className={cx('total__price')}>{price}</div>
-        </div>
-    )
-}
+const Total: React.FC<TotalProps> = ({ price }) => (
+    <div className={styles['total']}>
+        <div className={styles['total__total-price']}>Total:</div>
+        <div className={styles['total__subtitle}']}>{price}&nbsp;Eur</div>
+    </div>
+)
 
 export default Total
