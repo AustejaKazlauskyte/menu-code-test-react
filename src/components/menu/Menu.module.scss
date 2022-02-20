@@ -1,0 +1,44 @@
+.menu {
+  width: 40%;
+  margin: 0 auto;
+  min-width: 800px;
+
+  &__title {
+    text-align: center;
+    padding: 30px 30px 60px;
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  &__price {
+    color: black;
+    font-weight: bold;
+  }
+
+  &__counter-wrapper {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__selection-wrapper {
+    width: 10%;
+  }
+
+  &__order {
+    margin-top: 50px;
+  }
+
+  &__actions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+}

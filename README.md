@@ -14,7 +14,7 @@ We would like you to build a web application.
 
 We have prepared a basic application structure for you using React and Webpack. Please add **any** additional libraries that you think are suitable, for example for data fetching, CSS, and testing.
 
-The menu data is served via GraphQL (http://localhost:3000/graphql) or the API (http://localhost:3000/api/v1/menu). The client application is in `src/App.js`.
+The menu data is served via GraphQL (http://localhost:3000/graphql) or the API (http://localhost:3000/api/v1/menu). The client application is in `src/App.tsx`.
 
 **IMPORTANT!** Please use either the GraphQL (preferred) or API approach to fetch menu data on your application, write as clean and maintainable code as possible, and make sure that it's covered by test cases.
 

@@ -7,11 +7,16 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
-    entry: ['./src/App.js'],
+    entry: ['./src/App.tsx'],
     module: {
         rules: [
             {
-                test: /\.js?$/,
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.js$|jsx/,
                 exclude: /node_modules/,
                 use: [
                     {
@@ -25,7 +30,25 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.s(a|c)ss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: '[local]'
+                            }
+                        }
+                    },
+                    'sass-loader'
+                ]
+            }
         ],
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
         path: path.join(__dirname, '/public/webpack/'),

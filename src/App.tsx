@@ -1,8 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Main from './containers/Main';
 
 function App() {
-    return <h1>Menu Test</h1>;
+  return <Main />;
 }
 
 render(<App />, document.getElementById('root'));
